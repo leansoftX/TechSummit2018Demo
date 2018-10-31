@@ -1,4 +1,4 @@
-FROM devopslabs.azurecr.io/aspnetcore:2.0
+FROM labstest.azurecr.io/aspnetcore:2.0
 ARG source
 WORKDIR /app
 EXPOSE 80
