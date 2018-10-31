@@ -2,4 +2,4 @@ version: '3'
 
 services:
   techsummitdemo:
-    image: devopslabs.azurecr.io/techsummitdemo:#{Build.BuildId}#
+    image: labstest.azurecr.io/techsummitdemo:#{Build.BuildId}#
