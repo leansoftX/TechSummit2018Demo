@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  devopslabs-ci-test:
+    image: devopslabs.azurecr.io/aspnetcore-build:1.0-1.1
+    volumes:
+      - .:/src
+    working_dir: /src/TechSummitDemo
+    command: /bin/bash -c "dotnet restore ./TechSummitDemo.csproj && dotnet test --logger \"trx;logfilename=TEST.xml\""
+
